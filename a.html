@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS</title>
 </head>
 <body>
     <h1>new file</h1>
+    <label>Num One:</label><input type="text" id="num1"><br><br>
+    <label >Num Two:</label><input type="text" id="num2">
+    <button onclick="calculate()">Calculate</button>
+    <script>
+        function calculate(){
+       let a= document.getElementById("num1").value;
+        var b= document.getElementById("num2").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        var sum = a+b;
+        document.write(sum);
+        // console.log(sum);
+        }
+    </script>
     
 </body>
 </html>
